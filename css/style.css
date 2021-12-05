@@ -44,11 +44,10 @@
     z-index: 100;    
     border-bottom:  1px solid rgb(209, 209, 209);
   }
-  
-  .img-header{
-    float: left;
+  .img-header-1{
+    width: 85px;
+    height:22px;
   }
-  
   .menu-bar {
     display: flex;
     justify-content: space-between;
@@ -192,7 +191,11 @@
   .menu-bar ul li:hover .dropdown-menu-5 ul li {
     width: 270px;
   }
-
+.header-menu-burger{
+  background-color: white;
+  border: none;
+  display: none;
+}
   .hero-2 {
     width: 100%;
     height: calc(100vh - 40px);
@@ -332,10 +335,6 @@
    text-align: center;
    margin-right: 10px;
    margin-top: 15px;
-}
-
-  .category{
-   
 }
 
 .category p a{
@@ -961,6 +960,7 @@ padding-right: 25px;
 .picture-3{
   background-image:url(../img/form-bg.jpg);
   padding: 40px;
+  margin-top: 100px;
 }
 .picture-3-1{
   box-shadow: 0 0 50px 0 rgba(0,0,0,0.5);
@@ -970,16 +970,27 @@ padding-right: 25px;
   align-items: center;
   background-color: rgba(255,255,255,0.6);
 }
+.picture-3-1 p{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #a5a5a5;
+}
+.picture-3-1 h3{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: none;
+}
 .e-mail{
   border: none;
-  padding: 7% 37% 7% 19%;
+  padding: 20px 109px 20px 48px;
   font-size: 14px;
   color: lightslategray;
   outline: none;
   font-weight: 100 ;
 }
 .btn2{
-  padding: 7% 14% ;
+  padding: 17px 20px;
   border-radius: 0%;
   border: none;
   background-color: #333;
@@ -987,13 +998,54 @@ padding-right: 25px;
   font-size: large;
   font-weight: bolder;
   cursor: pointer;
+  font-family: initial;
 }
 .email-btn{
   display: flex;
 }
 
-/* @media (max-width: 1300px) {
+@media (max-width: 1300px) {
   .container {
-    width: 950px;
+    width: 950px; 
   }
-} */
+
+
+}
+@media (max-width: 1250px){
+  .container{
+    width: 740px;
+  }
+  .menu-bar ul{
+    display: none;
+  }
+.header-menu-burger{
+  display: block;
+}
+.grid-container{
+  justify-content: center;
+}
+}
+@media (max-width: 768px){
+  .container{
+    width: 90%;
+  }
+  .grid-container{
+    display: block;
+  }
+  .button1{
+    width: 230px;
+  }
+  .tx{
+    text-align: center;
+  }
+ .flex-img{
+   display: block;
+ }
+ .four-img-1 ,.r-right{
+   display: block;
+ }
+ .column{
+   display: block;
+   width: auto;
+ }
+}
