@@ -198,7 +198,6 @@
 }
   .hero-2 {
     width: 100%;
-    height: calc(100vh - 40px);
   }
   
   .text{
@@ -260,9 +259,8 @@
   }
   
   .grid-container{
-    display: grid;
-    grid-column-gap: 40px;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .image-container{
@@ -305,7 +303,7 @@
     background-color:rgba(0, 0, 0, 0.5);
   }
   .grid-item{
-    width: 100%;
+    width: 31%;
   }
   .img-2{
     position: relative;
@@ -403,7 +401,9 @@ padding: 50px 40px 20px 40px;
 .venom li a:hover{
 color: #ec6a2a;
 }
-
+.fa fa-comments-o{
+margin-left: 500px;
+}
 section{
   background-color: white;
 }
@@ -671,16 +671,11 @@ margin-left: 10px;
 .four-img-1{
   position: relative;
   display:flex;
-  height: 100%;
+  width: 100%;
   margin-right: 50px;
   
 }
-.left{
-  width: 503px;
-  height: 330px;
-  border-radius: 3px;
 
-}
 .r-right h3{
   margin: 15px 0px 15px 0px;
 }
@@ -921,8 +916,7 @@ transition: 2s;
 .matn-2{
 justify-content: space-between;
 padding: 30px 57px;
-color: #7f899b;
-width: 1270px;
+color: #7f899b;             
 display: flex;
 margin: 0 auto;
 }
@@ -1008,8 +1002,6 @@ padding-right: 25px;
   .container {
     width: 950px; 
   }
-
-
 }
 @media (max-width: 1250px){
   .container{
@@ -1021,16 +1013,22 @@ padding-right: 25px;
 .header-menu-burger{
   display: block;
 }
-.grid-container{
-  justify-content: center;
-}
 }
 @media (max-width: 768px){
   .container{
     width: 90%;
   }
+  .menu-bar{
+    justify-content: space-around;
+  }
   .grid-container{
     display: block;
+  }
+  .circle2{
+    display: none;
+  }
+  .grid-item{
+    width: 100%;
   }
   .button1{
     width: 230px;
@@ -1041,11 +1039,33 @@ padding-right: 25px;
  .flex-img{
    display: block;
  }
- .four-img-1 ,.r-right{
+ .four-img{
    display: block;
+ }
+ .four-img-1{
+   display: block;
+ }
+ .fa fa-comments-o{
+  left: 450;
+ }
+ .picture-3-1 , .email-btn{
+   display: block;
+ }
+ .e-mail{
+  padding: 17px 50px 20px 0px;
+  font-size: 10px;
  }
  .column{
    display: block;
    width: auto;
+ }
+ .matn-2{
+   display: block;
+ }
+ .matn-2 ul{
+   display: block;
+ }
+ .footer-2{
+   display: none;
  }
 }
