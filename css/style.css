@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s;
     font-weight: 600;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .menu-bar ul li a:hover {
@@ -196,6 +196,7 @@
   border: none;
   display: none;
 }
+
   .hero-2 {
     width: 100%;
   }
@@ -248,7 +249,9 @@
   .bac-into{
     background-color: white;
   }
-
+.flex-item{
+  background-color: white;
+}
   .all-pic{
     background-color: #f6f6f6;
     padding-top: 80px;
@@ -544,7 +547,7 @@ a.icon{
   background-color: white;
   border-radius: 50%;
   position:absolute;
-  bottom: 306px;
+  bottom: -24px;
   left: -24px;
   box-shadow: -7px 14px 53px grey;
   z-index: 4;
@@ -673,9 +676,11 @@ margin-left: 10px;
   display:flex;
   width: 100%;
   margin-right: 50px;
-  
+  flex: 2;
 }
-
+.r-right{
+  flex: 3;
+}
 .r-right h3{
   margin: 15px 0px 15px 0px;
 }
@@ -822,11 +827,14 @@ margin-left: 10px;
 }
 .row-f{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.footer-col-1{
-  padding: 0px 54px 0px 57px;
+
+.f-col-1{
+  display: flex;
+
 }
+
 .footer-col-1 h4{
   font-size: 18px;
   color: #ffffff;
@@ -872,9 +880,7 @@ margin-bottom: 8px;
   line-height: 0px;
   color: #ffffff;
 }
-.col-1-2{
-  margin-top: 60px;
-}
+
 .footer-2{
   width: 100%;
   height: 80px;
@@ -997,6 +1003,12 @@ padding-right: 25px;
 .email-btn{
   display: flex;
 }
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 31%;
+}
 
 @media (max-width: 1300px) {
   .container {
@@ -1013,6 +1025,9 @@ padding-right: 25px;
 .header-menu-burger{
   display: block;
 }
+.e-mail{
+  padding: 20px 0px 20px 48px;
+}
 }
 @media (max-width: 768px){
   .container{
@@ -1021,17 +1036,29 @@ padding-right: 25px;
   .menu-bar{
     justify-content: space-around;
   }
+  .text-in-1{
+    font-size: 28px;
+  }
   .grid-container{
     display: block;
   }
-  .circle2{
-    display: none;
+  .circle2,.circle,.circle3{
+    width: 63;
+    height:60 ;
+    box-shadow: -7px 14px 85px gray;
   }
   .grid-item{
     width: 100%;
   }
   .button1{
     width: 230px;
+  }
+  .z-title-1 h3 a{
+    font-size: 22px;
+    line-height: 1.5em;
+  }
+  .r-right h3{
+    padding-top: 37px;
   }
   .tx{
     text-align: center;
@@ -1045,15 +1072,29 @@ padding-right: 25px;
  .four-img-1{
    display: block;
  }
- .fa fa-comments-o{
-  left: 450;
+
+ .picture-3{
+   padding: 0;
  }
- .picture-3-1 , .email-btn{
+ .picture-3-1{
    display: block;
+   text-align: center;
+   box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+ }
+ .email-btn{
+  display: block;
+  text-align: center;
  }
  .e-mail{
-  padding: 17px 50px 20px 0px;
+  padding: 18px 39px 23px 0px;
   font-size: 10px;
+  text-align: center;
+ }
+ .pic-3{
+   font-size: 21px;
+ }
+ .btn2{
+  padding: 15px 39px;
  }
  .column{
    display: block;
@@ -1061,11 +1102,23 @@ padding-right: 25px;
  }
  .matn-2{
    display: block;
+   text-align: center;
  }
  .matn-2 ul{
+   display: block;
+ }
+ .matn-2 ul li{
+   padding-right: 0px;
+ }
+ .row-f{
+   display: block;
+   text-align: center;
+ }
+ .f-col-1{
    display: block;
  }
  .footer-2{
    display: none;
  }
+ 
 }
